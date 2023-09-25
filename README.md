@@ -24,16 +24,17 @@ tool.
 A developer should be able to import RowHome libraries into their own project, and use + extend the base functionality
 to develop their own game. RowHome will implement:
 
-- **_Canvas Manipulation_**: Sizing, resolution and frame rate logic; Providing an interface to change these values.
+- **_Canvas + Manipulation_**: A window to render the game with sizing, resolution and frame rate logic; Providing an
+  interface to change these values.
 
-- **_Sprite Rendering_**: Render some static or dynamic content to the canvas; Providing an interface for manipulation
-  of location, size, layer, animation cycle and timings, etc.
+- **_Sprite Rendering_**: Render + animate content on the canvas; Providing an interface for manipulation of location,
+  size, layer, animation cycle and timings, etc.
 
-- **_Sprite Hit-Boxes and Interactions_**: Collision and interaction detection engine; Providing an event broadcasting
-  system for reactionary developer made logic.
+- **_Sprite HitBoxes and Interactions_**: Collision and interaction detection engine; Providing an event broadcasting
+  system for reactionary developer made logic, along with customization for hitboxes.
 
 - **_Menu System_**: Pausing and Menu Navigation logic; Providing visual and menu tree customizability.
 
-- **_Lighting Engine_**: _STRETCH GOAL_, Provide a lighting engine to reduce static assets.
+- **_Lighting Engine_**: Provide a light source and basic rendering engine.
 
 # White-Boarding
