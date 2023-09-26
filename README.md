@@ -20,7 +20,8 @@ to create VimG games, and will provide tools and features inline with this goal.
 
 Players will interact with the game via a keyboard or controller, and interactions will follow Vim's `COMMAND, COUNT, 
 MOTION` input architecture. Furthermore, VimG games will have access to four modal states: `NORMAL, INSERT, VISUAL,
-COMMAND`. The idea behind VimG gameplay is to utilze the foundational components of Vim motions into a video game format.
+COMMAND`. The idea behind VimG gameplay is to utilze the foundational components of Vim into a video game format; Taking
+the functionality for text editing and building a game.
 
 Whilst the above specification may seem limiting, the implementation of how these components are used will be a
 developers choice. WASD movement will still be viable if a developer so chooses.
@@ -30,27 +31,24 @@ To illustrate with an example, a 2D platformer may implement the following mecha
 
 ```yml
 NORMAL:
-  - D: move left
-  - F: move right
-  - H: look left
-  - J: look down
-  - K: look up
-  - L: look right
+  - D, F: movement
+  - H, J, K, L: aim
   - S: shoot
-  - 2S: shoot twice (uninterruptible)
-  - Y1W: yeet primary weapon
-  - Y2W: yeet secondary weapon
+  - 2 -> S: shoot twice (uninterruptible)
+  - Y -> 1 -> W: yeet primary weapon
+  - Y -> 2 -> W: yeet secondary weapon
+
+  - V: enter visual mode
+  - ESC: open menu
 
 CONTROLLER NORMAL:
   #...
-  - D-Pad-Up X R1: yeet primary weapon
+  - D-Pad-Up -> X -> R1: yeet primary weapon
   #...
 
 VISUAL:
-  - H: pan camera left
-  - J: pan camera down
-  - K: pan camera up
-  - L: pan camera right
+  - H, J, K, L: pan camera
+  - ESC: enter normal mode
 ```
 
 ### Developer Experience
@@ -64,7 +62,11 @@ included in order to enable an exclusive Vim development experience (if one so c
 - Window: A window for the game to render in + API for manipulating the size and state (fullscreen, windowed, etc).
 - Canvas: A means to render assets in the window + API to alter the framerate.
 - Initalization: A function that runs on startup.
-- Loop: A function that runs every framerate + management of missing / slow frames.
-- Input Publisher: A way to react to user inputs, contextualized by current mode.
+- Logic Loop: A function that runs every frame to update game state.
+  - Rendering is done concurrently and automagically
+- Sprites: Renderable, animatable, objects to render on screen.
+  - Default Sprites: Shapes, Text, Composables `Sprite.Text("Hello World");`
+- Input Publisher: Input + Mode event publishing.
 
-In theory, the abstract concepts above should provide a developer with all the tools necessary to build a video game.
+In theory, the abstract concepts above should provide a developer with all the tools necessary to build a video game. At
+the very least, its a start.
