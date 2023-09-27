@@ -1,6 +1,8 @@
 # RowHome
 
-A simple 2D game engine, designed for developing keyboard based games.
+A simple 2D game engine for developing keyboard based games. Using the Vulkan engine, this project serves as both a
+passion driven endevour, and a learning oppurtunity for C++ development. Is this an overly ambitious side project? Of
+course, when has a side project ever had reasonable scope!
 
 # Project Overview:
 
