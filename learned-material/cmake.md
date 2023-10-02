@@ -1,10 +1,8 @@
 # CMake
 
-CMake is: "An open source, cross-platform family of tools designed to build, test and package software". What is
-commonly abstracted away from developers in languages like C# and TypeScript, is the way in which source code becomes
-machine code instructions.
-
-_See `cpp-compilation.md` for more on how this works._
+CMake is: "An open source, cross-platform family of tools designed to build, test and package software". To properly
+understand the need for this tool, it's important to understand what problem it is solving. Reading through
+`cpp-compiler.md` first will help understand the following.
 
 The C++ ecosphere does not have a standardized tool for building programs into executables. Due to the ...
 
