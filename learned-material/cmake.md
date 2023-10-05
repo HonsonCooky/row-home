@@ -1,10 +1,29 @@
 # CMake
 
-CMake is: "An open source, cross-platform family of tools designed to build, test and package software". To properly
-understand the need for this tool, it's important to understand what problem it is solving. Reading through
-`cpp-compiler.md` first will help understand the following.
+Contents of this file will primarily be important snippets from
+[this book](https://cmake.org/cmake/help/book/mastering-cmake/index.html). Reading this yourself is the best thing you
+could probably do.
 
-The C++ ecosphere does not have a standardized tool for building programs into executables. Due to the ...
+CMake is a build-system generator for software projects; Allowing developers to specify build parameters in a portable
+format. Cross-platform builds, system introspection (figuring out the hardware capablilities and specs), and custom
+builds are simplified with this tool.
+
+_Note_: CMake is probably an unnecessary tool for embeded systems programming (where the hardware won't change).
+
+CMake will generate projects files for native build tools: Visual Studio, XCode, Unix, etc.
+
+## Top Level CMake File
+
+CMake instructions are stored in a file called `CMakeLists`. There can exist multiple of these, but for now we will talk
+about the 'top-level' or 'first-to-execute' file.
+
+The top-level file MUST start with:
+
+```cmake
+cmake_minimum_required(VERSION X.XX)		# Backwards Compatibility
+project(Project_Name)				# Project Name
+add_executable(${PROJECT_NAME} src/main.cpp)	# Base Source File
+```
 
 # Helpful Commands
 
