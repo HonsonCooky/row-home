@@ -25,7 +25,23 @@ project(Project_Name)				# Project Name
 add_executable(${PROJECT_NAME} src/main.cpp)	# Base Source File
 ```
 
-# Helpful Commands
+## Modularizaton
+
+Modularization || mono-repo setups would likely take advantage of multiple build systems. In CMake, each root module
+folder must have a `CMakeLists` file. The 'top-level' `CMakeLists` file, can then use the 'add_subdirectory' command
+(seen below) to build this module as part of it's process.
+
+```cmake
+add_subdirectory(source_dir [binary_dir] [EXCLUDE_FROM_ALL] [SYSTEM])
+```
+
+- `source_dir`: Where the source folder is located
+- `binary_dir`: Where to store the build
+- `EXCLUDE_FROM_ALL`: If provided, will not be included in the `ALL` target for the parent dir. Forcing it to be built
+  on it's own (which makes sense for directories that are not a part of the main build).
+- `SYSTEM`: If true, will be treated as 'system include' directories when compiling.
+
+# Commands
 
 **_BUILD && EXECUTE | WINDOWS_**
 
@@ -42,3 +58,5 @@ msbuild .\out\build\RowHome.sln
 # Run program
 .\out\build\Debug\RowHome.exe
 ```
+
+_I've build a handy powershell (`build_run.ps1`) script to rebuild and run this project._
