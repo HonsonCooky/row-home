@@ -34,7 +34,7 @@ Here's how RowHome accomplishes this:
    tools and mouse interactions, RowHome's text-based approach lets you craft animations and images all within your
    preferred coding environment, allowing you to stay in your preferred IDE while creating games.
 
-3. **Tailored for Keyboard-Based Games:** While VimG can be used to create an array of keyboard-based game, RowHome's
+3. **Tailored for Keyboard-Based Games:** While VimG can be used to create an array of keyboard-based games, RowHome's
    specialized tools are designed to excel in the realm of Vim-like functionalities. The intention behind this design is
    to harness Vim skills to play AND create immersive experiences. VimG games built with RowHome take advantage of
    familiar keyboard-based inputs, allowing you to dive into captivating worlds and interactive narratives with the same
