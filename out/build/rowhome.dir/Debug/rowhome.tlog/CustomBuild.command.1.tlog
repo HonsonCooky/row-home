@@ -1,0 +1,10 @@
+^C:\USERS\HONSO\SOURCE\ROW-HOME\CMAKELISTS.TXT
+setlocal
+C:\Users\Honso\scoop\apps\cmake\3.27.6\bin\cmake.exe -SC:/Users/Honso/source/row-home -BC:/Users/Honso/source/row-home/out/build --check-stamp-file C:/Users/Honso/source/row-home/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
