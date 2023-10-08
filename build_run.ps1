@@ -6,7 +6,7 @@ BUILD
 
 "@
 cmake -S . -B .\out\build\; 
-msbuild .\out\build\RowHome.sln; 
+msbuild .\out\build\rowhome.sln; 
 
 
 Write-Host @"
@@ -18,4 +18,4 @@ RUN
 
 
 "@
-.\out\build\Debug\RowHome.exe;
+.\out\build\Debug\rowhome.exe;
