@@ -2,7 +2,7 @@
 
 **_State_**: `Active Development`
 
-RowHome is a simple game engine for developing 2D, keyboard based games in C++. This overly ambitious side project
+RowHome is a simple game engine library for developing 2D, keyboard based games in C++.
 
 # Idea Overview
 
@@ -21,36 +21,30 @@ unique.
 The driving force behind RowHome is to empower individuals by building upon the programming skills and current workflow
 they already possess. Many modern game development environments demand a significant investment in learning new
 interfaces and workflows, presenting a steep learning curve. RowHome challenges this status quo by enabling developers
-to create keyboard-based games efficiently, with specialized tools tailored to Vim motions and modal states.
+to create keyboard-based games efficiently, with their existing tools.
 
-Here's how RowHome accomplishes this:
+Sure, I can help you with that. Here is one possible way to rewrite the text without repeating ideas:
 
-1. **Seamless Integration with Your Workflow:** RowHome leverages your programming skills and current workflow, enabling
-   you to develop video games in full without needing to leave your IDE of choice. This approach is specifically
-   tailored to Vim and Neovim users, ensuring a smooth experience as you dive into game development.
+RowHome is a game development environment that offers the following features:
 
-2. **Text-Based Graphics:** RowHome offers a unique approach to graphics creation, enabling you to build animations and
-   images entirely in text formats if you choose to do so. Unlike game development environments that rely on UI-based
-   tools and mouse interactions, RowHome's text-based approach lets you craft animations and images all within your
-   preferred coding environment, allowing you to stay in your preferred IDE while creating games.
+1. **Workflow Compatibility:** You can use RowHome with your existing IDE, whether it is Vim or Neovim, and develop
+   video games without switching tools. RowHome is optimized for Vim and Neovim users, giving you a seamless and smooth
+   game development experience.
 
-3. **Tailored for Keyboard-Based Games:** While VimG can be used to create an array of keyboard-based games, RowHome's
-   specialized tools are designed to excel in the realm of Vim-like functionalities. The intention behind this design is
-   to harness Vim skills to play AND create immersive experiences. VimG games built with RowHome take advantage of
-   familiar keyboard-based inputs, allowing you to dive into captivating worlds and interactive narratives with the same
-   precision and efficiency you bring to your coding endeavors. This synergy between Vim and VimG opens up a new
-   dimension of immersive gaming where your keyboard becomes the gateway to endless adventures and creative
-   possibilities.
+2. **Text-Based Graphics:** You can create animations and images using text formats with RowHome, instead of relying on
+   UI-based tools and mouse interactions. This way, you can stay in your coding environment and create games with
+   text-based graphics.
 
-4. **Empowering Developers with Minimal Abstractions:** RowHome intentionally minimizes abstractions, allowing
-   developers to exercise the full breadth of their programming knowledge. Unlike many modern game development
-   environments that often hide complex details behind layers of abstraction, RowHome invites developers to engage
-   directly with the underlying mechanics and code. This approach not only enhances your understanding of game
-   development but also provides a level of control and customization that can't be achieved through excessive
-   abstraction. It's an environment where your programming expertise is truly unleashed, enabling you to craft unique
-   and innovative gaming experiences. Of course, there is nothing stopping community based packages from enabling
-   common features, but by default, the experiences you create are designed to challenge the mathematics and problem
-   solving skills you've fostered.
+3. **Keyboard-Based Games:** RowHome's tools are specially designed for Vim-like functionalities, allowing you to use
+   your Vim skills to play and create immersive games. You can use familiar keyboard-based inputs to explore captivating
+   worlds and interactive narratives with VimG games built with RowHome. This creates a new dimension of immersive
+   gaming where your keyboard is the portal to endless adventures and creative possibilities.
+
+4. **Minimal Abstractions:** RowHome gives you direct access to the underlying mechanics and code of game development,
+   instead of hiding them behind layers of abstraction. This way, you can use your programming knowledge to the fullest
+   and have more control and customization over your games. RowHome also enhances your understanding of game development
+   and challenges your mathematics and problem solving skills. You can still use community based packages to enable
+   common features, but by default, RowHome empowers you to craft unique and innovative gaming experiences.
 
 In essence, RowHome is about bridging the gap between your professional life and your passion for game development. Many
 aspiring developers enter the industry with game development dreams, but the complexities of life often intervene,
